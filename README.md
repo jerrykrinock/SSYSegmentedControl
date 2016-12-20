@@ -8,6 +8,8 @@ variable segment widths, adapting to the text in each segment, so that it could
 be butted horizontally against a fixed UILabel and give the user the sensation
 of *completing  the sentence* with their selection.
 
+You can run a [live demo at appetize.io](https://appetize.io/app/t5umekwzg6ax77459pvt4f4e38?device=iphone5s&language=en&autoplay=true&screenOnly=true)
+
 ## Features
 
 * Customizable height and font.  Defaults to the default UILabel font.
