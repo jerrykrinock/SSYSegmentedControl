@@ -193,6 +193,8 @@ import UIKit
             x += width
             x -= deselectedBorderWidth  // Adjacent segments share border
         }
+        
+        updateIndicator()
     }
     
     override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
