@@ -159,6 +159,24 @@ import UIKit
         super.init(frame: frame)
         commonConfig()
     }
+
+    /**
+     This override should make constraining to this control's 'baseline'
+     operate properly when using Auto Layout, in iOS 9 or later.  (See Apple's
+     documentation of this function.)   I am doing exactly what they say to do;
+     however it does not work.  My advice is to not constrain to baseline,
+     Consider constraining to centerY or bottom instead. */
+    override open var forLastBaselineLayout : UIView {
+        var answer : UIView
+        if (subviews.count > 0) {
+            answer = subviews[0]
+        }
+        else {
+            answer = self
+        }
+        
+        return answer
+    }
     
     func commonConfig() {
         indicatorLayer.borderWidth = selectedBorderWidth
